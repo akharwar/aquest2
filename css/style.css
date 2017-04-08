@@ -2,6 +2,7 @@
    outline: 1px solid red !important;
 }*/
 
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -108,7 +109,8 @@
     background-position: center;
 }
 .text-area{
-    display: table-cell;
+    max-height: 373px;
+    display:inline-grid;
     text-align: center;
  /* margin: 0 15%;  */
     padding: 10%;
@@ -439,4 +441,10 @@
 }
 span.title{
     text-transform: uppercase;
+}
+
+@media  (max-width:960px ) {
+       #disappear {
+            display: none;
+        }
 }
