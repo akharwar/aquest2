@@ -1,6 +1,6 @@
-/*{
+*{
    outline: 1px solid red !important;
-}*/
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -25,6 +25,8 @@
     src: url(../fonts/brandon_med-webfont.woff);
 }
 
+/**/
+
 .mydiv{
     z-index: 1000;
     top: 50px;
@@ -32,10 +34,20 @@
     width: 200px;
     display: flex;
     height: 60px;
- /*   border: 3px solid #73AD21; */
 }
 
+.mydiv.col-md-12 img{
+    max-height:100%;
+    width:100%;
+}
+#disappear{
+    /*disappear*/
+}
 
+/**/
+/**/
+#bg
+/**/
 
 .container-fluid {
       padding:0;
@@ -53,6 +65,13 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    padding: 0;
+}
+.row{
+    width:100%;
+    height:auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 .row-size-1{
     width:100%;
@@ -80,16 +99,18 @@
     max-height: 373px;
     width :100%;
 }
-.image_strech img{
-    width:100%;
-    height: 100%;
+.image_strech {
+    height: 373px;
     max-height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .text-area{
     display: table-cell;
     text-align: center;
-    margin: 0 15%;
-    padding: 10% 0;
+ /* margin: 0 15%;  */
+    padding: 10%;
     vertical-align: middle;
 }
 
@@ -109,7 +130,7 @@
     font-size: 16px;
 }
 .bounding-box {
-
+  height: 380px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -134,18 +155,74 @@
     height:100%;
     border-collapse:collapse;
 }
-#bg {
 
+/*........div contain image as baackground   */
+
+#bg {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transform: translateY(0);
 }
+
+/*.....................palzileri............ */
+#bg.palzileri{
+
+    background-image: url(../image/palzileri.jpg);
+    background-position-x:25%;
+    height: 746px;
+}
+
+/*....................assos..................*/
+#bg.assos{
+    background-image: url(../image/assos.jpg);
+    height: 746px;
+}
+
+/*...................scruud..................*/
+#bg.scruud{
+    background-image: url(../image/scruud.jpg);
+    height: 373px;
+}
+/*...................mediaset..................*/
+#bg.mediaset{
+    background-image: url(../image/mediaset.jpg);
+    height: 373px;
+}
+/*...................fornasetti..................*/
+#bg.fornasetti{
+    background-image: url(../image/fornasetti.jpg);
+    height: 746px;
+}
+/*...................ferrari..................*/
+#bg.ferrari{
+    background-image: url(../image/ferrari.jpg);
+    height: 746px;
+}
+/*...................citco..................*/
+#bg.citco{
+    background-image: url(../image/citco.jpg);
+    height: 373px;
+}
+/*...................premi..................*/
+#bg.premi{
+    background-image: url(../image/premi.jpg);
+    height: 373px;
+}
+
+
+.qoutes{
+    height: 373px;
+}
+
 .tile{
     width:100%;
+    max-height: 746px;
     position: relative;
     padding: 10px 10% 10% 10%;
 }
+
+
 .credit{
     position: absolute;
     bottom: 5%;
@@ -182,6 +259,29 @@
 
 }
 
+.button{
+    background-color: transparent;
+    border:0;
+}
+.button:focus{
+    outline: transparent;
+}
+.button img{
+    width: 50%;
+    top: 50%;
+    margin: 15px;
+}
+
+.social-wall{
+    background-color: rgb(238, 238, 238);
+    padding: 15% 5%;
+    height: 373px;
+    max-height: 100%;
+}
+.image-strech{
+    max-height: 373px;
+}
+
 .div_hover{
     background-color:#0083DD;
 }
@@ -206,6 +306,8 @@
 .another-element {
   .pull-right();
 }
+
+
 .float{
     float: left;
 }
@@ -220,10 +322,16 @@
 .icon{
     padding-left: 25%;
 }
-.des-text{
+
+.des-text p{
     font-size: 20px;
     font-weight: 200;
 }
+
+.des-text {
+    padding: 10% 10%;
+}
+
 .modal-body {
     height:100%;
     width: 100%;
@@ -243,7 +351,13 @@
 }
 .modal-col-content{
     width: 70%;
+    padding: 20px;
+    margin:50px 10px 10px 0;
+    color:white;
+    text-align: center;
 }
+
+
 .modal-mydiv{
     top: 50px;
     width: 200px;
@@ -253,7 +367,7 @@
    /* border: 3px solid #73AD21; */
 }
 #GSCCModal{
-    background-color: rgba(0, 131, 221, 0.83);
+    background-color: rgba(0, 171, 232, 0.9);
 }
 
 .cloose{
@@ -266,8 +380,39 @@
 }
 .menu-row{
     width:100%;
-    max-height: 11%;
+    border-bottom:2px solid rgba(255, 255, 255, 0.3);
+    opacity: 0.5;
+    height: initial;
+    padding: 10px;
+
 }
+.menu-row:hover {
+    border-bottom:2px solid rgb(255, 255, 255);
+    opacity: 0.7;
+}
+/*
+.menu-row h3{
+    margin-top:10px;
+}
+.menu-row h3:hover{
+    opacity: 0.5;
+}*/
+.link{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.link:hover, .link:focus {
+    color: white;
+    text-decoration: none;
+    outline: 0;
+
+}
+
 /*<div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
