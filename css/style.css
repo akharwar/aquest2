@@ -113,11 +113,16 @@
     display:inline-grid;
     text-align: center;
  /* margin: 0 15%;  */
-    padding: 10%;
+    padding:30px 10%;
     vertical-align: middle;
 }
 
+.text-area #title{
+    text-align: left;
+}
+
 .text-area h3{
+
     color: #0083DD;
     margin-bottom: 30px;
     letter-spacing: 3px;
@@ -186,6 +191,7 @@
 #bg.scruud{
     background-image: url(../image/scruud.jpg);
     height: 373px;
+
 }
 /*...................mediaset..................*/
 #bg.mediaset{
@@ -211,18 +217,29 @@
 #bg.premi{
     background-image: url(../image/premi.jpg);
     height: 373px;
+
+}
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+/*
+#bg:hover{
+
+    animation: animatedBackground 40s linear infinite;
+}
+*/
+.quotes{
+    padding: 100px 10%;
 }
 
-
-.qoutes{
-    height: 373px;
-}
 
 .tile{
     width:100%;
+    min-height: 373px;
     max-height: 746px;
     position: relative;
-    padding: 10px 10% 10% 10%;
+    padding: 40px 10% 10% 10%;
 }
 
 
@@ -439,12 +456,28 @@
     letter-spacing: 3px;
     font-weight: 600;
 }
-span.title{
+.title{
     text-transform: uppercase;
 }
 
-@media  (max-width:960px ) {
+@media  (max-width:1299px ) {
        #disappear {
             display: none;
         }
+        .text-area{
+            height: 373px;
+            padding: 110px 10%;
+            text-align: center;
+            margin:0;
+            display: block;
+        }
+        .quotes.text-area{
+            padding: 115px 10% 85px 10%;
+        }
+        .quotes {
+            padding: 0;
+        }
+
 }
+
+@media (max-width:)
