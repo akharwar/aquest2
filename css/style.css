@@ -74,6 +74,7 @@
     height:auto;
     margin-left: 0;
     margin-right: 0;
+    position: relative;
 }
 .row-size-1{
     width:100%;
@@ -168,9 +169,8 @@
 
 #bg {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transform: translateY(0);
+  position: absolute;
+  background-size:110% 100%;
 }
 
 /*.....................palzileri............ */
@@ -179,24 +179,27 @@
     background-image: url(../image/palzileri.jpg);
     background-position-x:25%;
     height: 746px;
+    top:;
 }
 
 /*....................assos..................*/
 #bg.assos{
     background-image: url(../image/assos.jpg);
     height: 746px;
+    top:0;
 }
 
 /*...................scruud..................*/
 #bg.scruud{
     background-image: url(../image/scruud.jpg);
     height: 373px;
-
+    top: 746px;
 }
 /*...................mediaset..................*/
 #bg.mediaset{
     background-image: url(../image/mediaset.jpg);
     height: 373px;
+
 }
 /*...................fornasetti..................*/
 #bg.fornasetti{
@@ -223,10 +226,15 @@
     from { background-position: 0 0; }
     to { background-position: 100% 0; }
 }
+#bg:hover{
+      transform:all 0.5s;
+      background-position: 0 0;
+}
+
 /*
 #bg:hover{
 
-    animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 40s linear;
 }
 */
 .quotes{
